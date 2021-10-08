@@ -8,7 +8,7 @@ const client = new Discord.Client({
         Discord.Intents.FLAGS.GUILD_MESSAGE_REACTIONS
     ]
 });
-const config = require('./config.json');
+const config = process.env;
 client.config = config;
 const synchronizeSlashCommands = require('discord-sync-commands');
 
