@@ -1,4 +1,4 @@
-const config = require('../config.json');
+const config = process.env;
 
 module.exports = {
     giveaway: (config.everyoneMention ? "@everyone\n\n" : "")+"🎉🎉 **ÇEKİLİŞ BAŞLADI** 🎉🎉",
