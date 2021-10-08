@@ -37,7 +37,7 @@ module.exports = {
         }
         client.giveawaysManager.unpause(giveaway.messageId)
         .then(() => {
-            interaction.reply('Çekiliş durduruldu!');
+            interaction.reply('Çekiliş devam ediyor!');
         })
         .catch((e) => {
             interaction.reply({
